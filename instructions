@@ -1,0 +1,40 @@
+
+browserify is used to create this project
+
+
+//create
+1. >>sudo install -g browserify
+2. >>sudo install lodash
+3.	create a bundle file 
+	>>browserify script.js>bundle.js
+4.change the index.html file . Call for the bundle.js at the place of the script.js
+5.run >>live-server
+
+//update
+after updating in the script.js
+	eg:
+	//use lodash module
+	var _ =require('lodash');
+	console.log(_);
+
+1.>>browserify script.js>bundle.js
+2.>>live-server
+
+
+//always look the packages used in the project , sometimes unecessary packages are used which increases the size of the application , and make website slower.
+
+//package.json file is where all track od packages are listed so checkout the dependencies if we have to checkout for the packages used in project.
+
+// semver or semantic versioning -"major release.minor release.passed release"
+	eg:"lodash": "^4.17.11" 
+
+
+>>npm install //all dependencies are automatically downloaded reading package.json file ,if we doesnt have modules downloaded.
+
+
+//run
+1.update package.json script tag 
+	"scripts": {
+    "build": "browserify script.js>bundle.js && live-server"
+
+2.>>npm run build
