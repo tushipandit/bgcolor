@@ -1,6 +1,12 @@
 
 browserify is used to create this project
 
+//initials
+1.>>sudo install node.js
+2.>>sudo install npm
+3.Open the project folder and create package.json file using
+	>>npm init
+
 
 //create
 1. >>sudo install -g browserify
