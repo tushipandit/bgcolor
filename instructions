@@ -2,11 +2,10 @@
 browserify is used to create this project
 
 //initials
-1.>>sudo install node.js
-2.>>sudo install npm
+1.install node.js
+2.install npm
 3.Open the project folder and create package.json file using
 	>>npm init
-
 
 //create
 1. >>sudo install -g browserify
@@ -42,5 +41,4 @@ after updating in the script.js
 1.update package.json script tag 
 	"scripts": {
     "build": "browserify script.js>bundle.js && live-server"
-
 2.>>npm run build
